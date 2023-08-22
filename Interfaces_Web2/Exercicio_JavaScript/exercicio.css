@@ -1,0 +1,31 @@
+body {
+    height: 100%;
+    width: 100%;
+    display:flex;
+    font-family: arial;
+    font-size: 16pt;
+    background: rgb(223, 223, 252);
+    padding: auto;
+    margin: auto;
+}
+main{
+    padding: auto;
+    margin: 10px;
+    justify-content: space-between;
+    background-color: rgb(103, 165, 224);
+    align-items: center;
+    text-align: center;
+    width: 70%;
+    height: 100%;
+}
+
+
+div#mostrar {
+    background: white;
+    text-align: center;
+    border-radius: 10px;
+    width: 60%;
+    height: 50%;
+    margin: auto;
+    margin-top:2%;
+}

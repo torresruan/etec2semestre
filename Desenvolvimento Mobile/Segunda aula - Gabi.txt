@@ -1,0 +1,28 @@
+void main() {
+int x = 5;
+  int y = 3;
+  int soma = x + y; 
+  if (soma >= 10) { 
+   print("A  soma é maior que 10 = " + soma.toString());
+    } else {
+    print ("A soma é menor que 10 = " + soma.toString());
+  }
+} 
+
+
+
+void main() {
+  int x = 5;
+  int y = 2;
+ 
+  int soma = x + y;
+  int sub = x - y;
+ 
+  if ((soma > 10) && (sub > 5)) {
+    print("Soma maior a 10 = " + soma.toString() + " subtração maior a 5 = " + sub.toString());
+  } else if (soma < 10 && sub < 5) {
+    print("Soma menor que 10 = " + soma.toString() + " subtração menor que 5 = " + sub.toString());  
+  } else {
+    print("Soma igual a 10 = " + soma.toString() + " subtração igual a 5 = " + sub.toString());
+  }
+}

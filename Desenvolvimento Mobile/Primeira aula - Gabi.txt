@@ -1,0 +1,16 @@
+void main - Não tem nenhum retorno, 
+
+//PRIMEIRO CODIGO DE DART,  AQUI VIMOS COMO FAZ PARA INICIAR O CODIGO, E COMO FAZER CONCATENAÇÃO. 
+
+
+void main() {
+ int x = 10;
+ int y = 12;
+  
+ int soma = x + y; 
+ print ("Resultado: " + soma.toString() + " continuar");
+  
+  
+} 
+
+

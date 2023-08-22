@@ -1,0 +1,237 @@
+Exercicios 11/08
+
+
+void main() {
+  
+//Ex1--->
+
+double valorConta = 1000;
+  double valorSaque = 1100;
+  
+  if (valorSaque <= valorConta) {
+    print ("Valor na conta é de: " + valorConta.toString() + " saque liberado");
+  } else { 
+  print("Valor na conta é de :" + valorConta.toString() + " saque recusado");
+     }
+    
+  
+  
+} 
+
+
+//Ex2:--->
+
+void main() {
+  double numero = -9; 
+  
+  if(numero >= 0){
+    print ("O número " + numero.toString() + " é positivo");
+  }else {
+    print ("O número " + numero.toString() + " é negativo"); }
+  
+} 
+
+
+//Ex3--->
+
+
+void main() {
+int valorUm = 4;
+  int valorDois = 4;
+  
+  if(valorUm > valorDois) {
+    print (valorUm.toString() + " é maior que " + valorDois.toString());
+  }else if (valorDois > valorUm){
+    print (valorDois.toString() + " é maior que " + valorUm.toString()); 
+  }else {
+    print (valorUm.toString() + " è igual a " + valorDois.toString());
+  }
+  
+} 
+
+//Ex4--->]
+
+void main() {
+
+  int valorUm = 9;
+  int valorDois = 9;
+  if(valorUm  > valorDois) {
+    print (valorUm.toString() + " é maior que " + valorDois.toString());
+  }else if(valorUm  < valorDois){
+    print (valorDois.toString() + " é maior que " + valorUm.toString());
+  }else {
+    print ("Os números são iguais");
+  };
+ 
+}
+
+//Ex5--->
+
+void main() {
+
+double nota1 = 8;
+double nota2 = 8;
+double nota3 = 8;
+double nota4 = 8;
+double frequencia = 50;
+double media =(nota1 + nota2 + nota3 + nota4)/4;
+         print ("Sua media é: " + media.toString());
+  print("\n");
+  
+if(media >=6 && frequencia >=75){
+  print ("Aluno aprovado com frequência de: " + frequencia.toString() + "\ne nota: " + 
+        media.toString());
+}else if(media <= 5 && frequencia < 75){
+  print ("Aluno reprovado, media: " + media.toString() + " e frequencia: " + frequencia.toString());
+}else if (media <= 5){
+  print ("Reprovado por menção");
+  }else{
+print ("Reprovado por frequencia " + frequencia.toString());
+}
+}
+
+//Ex6--->
+
+void main() {
+
+ int nivelProf = 0;
+ double valorHora = 15;
+ double horaTrab = 30;
+ 
+  
+  if(nivelProf == 1 || nivelProf == 2){
+     double salario = horaTrab * 15;
+       print (salario);
+       
+  }else if(nivelProf == 3 || nivelProf == 4){
+   double salario = horaTrab * 20;
+       print (salario);
+         }else if(nivelProf == 5 || nivelProf == 6){
+     double salario = horaTrab * 25;
+       print (salario);
+    }else{
+    print("Não existe");
+  }
+  
+  
+  
+}
+
+//Ex7--->
+
+void main() {
+
+ double faixaSal = 6499.16;
+ 
+ 
+  if(faixaSal <= 1499.15){
+      double imposto = 1;
+      double pagarImpt = faixaSal * imposto; 
+      print (pagarImpt);
+    }else if(faixaSal >= 1499.16 || faixaSal <= 2246.75){
+    
+      double imposto = 0.075;
+      double pagarImpt = faixaSal * imposto; 
+      print ("O valor de imposto pago será de: " + pagarImpt.toStringAsFixed(2));
+    }else if(faixaSal >= 2246.76 || faixaSal <= 2995.70){
+      
+      double imposto = 0.15;
+      double pagarImpt = faixaSal * imposto; 
+      print ("O valor de imposto pago será de: " + pagarImpt.toStringAsFixed(2)); 
+    
+  }else if(faixaSal >= 2995.71 || faixaSal <= 3743.19){
+    
+      double imposto = 0.225;
+      double pagarImpt = faixaSal * imposto; 
+      print ("O valor de imposto pago será de: " + pagarImpt.toStringAsFixed(2)); 
+  }else{
+    
+      double imposto = 0.275;
+      double pagarImpt = faixaSal * imposto; 
+      print ("O valor de imposto pago será de: " + pagarImpt.toStringAsFixed(2)); 
+  }
+   
+}
+
+//Ex8--->
+void main() {
+  
+  int nmr1 = 10;
+  int nmr2 = 2;
+  int nmr3 = 10;
+  int medio = 0;
+  
+  if(nmr1 > nmr3){medio = nmr1; nmr1 = nmr3; nmr3 = medio;
+  }if(nmr1 > nmr2){medio = nmr1; nmr1 = nmr2; nmr2 = medio;
+  }if(nmr2 > nmr3){medio = nmr2; nmr2 = nmr3; nmr3 = medio;}
+  
+print ("O número " + nmr1.toString() + " é o menor de todos"); 
+ 
+}
+
+//Ex9--->
+ int nmr1 = 30;
+  int nmr2 = 50;
+  int nmr3 = 10;
+  int medio = 0;
+  
+  if(nmr1 > nmr3){medio = nmr1; nmr1 = nmr3; nmr3 = medio;
+  }if(nmr1 > nmr2){medio = nmr1; nmr1 = nmr2; nmr2 = medio;
+  }if(nmr2 > nmr3){medio = nmr2; nmr2 = nmr3; nmr3 = medio;}
+  
+print ("O número " + nmr1.toString() + " é menor que o número " + nmr2.toString() +
+        ",\ne o número " + nmr3.toString() + " é o maior de todos"); 
+ 
+}
+
+
+//Ex10--->
+
+void main() {
+  
+  double lado1 = 2; 
+  double lado2 = 5;
+  double lado3 = 3;
+  
+  
+  
+  if(lado1 == lado2 && lado2 == lado3){
+    print ("Seu triangulo é equilátero");
+  }else if(lado1 == lado2 || lado2 == lado3 || lado1 == lado3){
+    print("Seu triangulo é isósceles");
+  }else{ print ("Seu triangulo é escaleno");}
+}
+
+
+//Ex11--->
+
+void main() {
+
+  double salMes = 2000.00;
+  double gastoMes = 2000.00;
+  double sobraMes = 0;
+  
+  
+if(gastoMes <= salMes){
+  sobraMes = salMes - gastoMes;
+  
+  print("Seus gasto esse mes foram de: " + gastoMes.toString() + 
+        " reais, \no valor que sobrou foi de: " 
+       + sobraMes.toStringAsFixed(2) + " reais.");
+}else{
+    sobraMes = gastoMes - salMes;
+  
+  print("Seus gasto esse mes foram de: " + gastoMes.toString() + 
+        " reais, \no valor que faltou foi de: " 
+       + sobraMes.toStringAsFixed(2) + " reais.");
+}{
+}
+  
+  
+  
+}
+
+
+
+
+

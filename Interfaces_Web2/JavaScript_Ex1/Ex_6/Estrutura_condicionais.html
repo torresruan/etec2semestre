@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estrutura Condicional</title>
+</head>
+<body>
+    <p id="num" ></p>
+
+    <script>
+            /*Math.random gera um numero aleatório entre 0 e 1,
+            multiplica por 1000 para gerar números entre 1 e 999
+            e extrai somente a parte inteira (Math.random)*/
+
+            var num = Math.floor(Math.random() * 1000);
+                if (num % 2==0){
+
+            window.document.getElementByID("num").innerText = num + " é par. Quantidade de dígitos:  " + num.toString().length;
+        }else
+
+            {
+                window.document.getElementById("num").innerText = num + " é impar. Qauntidade de dígitos: " + num.toString().length;
+            }
+
+    </script>
+</body>
+</html>
